@@ -5,6 +5,7 @@
 
 package com.raghavx.zns.packet;
 
+import com.raghavx.zns.network.aodv.AODV;
 import java.beans.PropertyChangeSupport;
 import java.util.Timer;
 import com.raghavx.zns.node.Node;
@@ -21,7 +22,7 @@ public class RERR extends Packet implements IPacket{
 
     public RERR() {
 
-        rerrTimer.schedule(this, Node.PATH_DISCOVERY_TIME);
+        rerrTimer.schedule(this, AODV.PATH_DISCOVERY_TIME);
         
     }
 

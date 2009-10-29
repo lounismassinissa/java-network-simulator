@@ -5,6 +5,7 @@
 
 package com.raghavx.zns.packet;
 
+import com.raghavx.zns.network.aodv.AODV;
 import java.beans.PropertyChangeSupport;
 import java.util.Timer;
 import java.util.logging.Level;
@@ -20,7 +21,7 @@ public class RREP extends Packet implements IPacket{
     private PropertyChangeSupport pcs = new PropertyChangeSupport(source);
     private Timer rrepTimer = new Timer();
     public RREP() {
-        rrepTimer.schedule(this, Node.NET_TRAVERSAL_TIME);
+        rrepTimer.schedule(this, AODV.NET_TRAVERSAL_TIME);
     }
 
     @Override

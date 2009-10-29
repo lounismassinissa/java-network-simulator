@@ -10,6 +10,7 @@ import java.util.Timer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import com.raghavx.zns.manager.ValueLogger;
+import com.raghavx.zns.network.aodv.AODV;
 import com.raghavx.zns.node.Node;
 
 /**
@@ -24,7 +25,7 @@ public class RREQ extends Packet implements IPacket{
     private Timer rreqTimer = new Timer();
 
     public RREQ() {
-        rreqTimer.schedule(this, Node.PATH_DISCOVERY_TIME);
+        rreqTimer.schedule(this, AODV.PATH_DISCOVERY_TIME);
     }
 
     @Override
