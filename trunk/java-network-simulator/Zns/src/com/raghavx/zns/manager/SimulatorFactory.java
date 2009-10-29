@@ -13,22 +13,15 @@ import com.raghavx.zns.trust.Trust;
  */
 public abstract class SimulatorFactory {
 
-    public SimulatorFactory getInstance(){
-        return this;
-        
-    }
+
     /*
     public Route createRoute() {
         return new Route();
     }
     */
-    public Node createNode(IP ip) {
-        return new Node(ip);
-    }
 
-    public Network createNetwork() {
-        return new Network();
-    }
+
+
 
     public Trust createTrust(IP ip){
         return new Trust(ip);

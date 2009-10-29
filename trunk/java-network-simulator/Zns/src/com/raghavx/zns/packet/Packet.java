@@ -4,6 +4,7 @@
  */
 package com.raghavx.zns.packet;
 
+import com.raghavx.zns.network.aodv.AODV;
 import java.util.TimerTask;
 import com.raghavx.zns.node.Node;
 
@@ -15,7 +16,7 @@ public abstract class Packet extends TimerTask{
 
     public Node source = null;
     public Node dest = null;
-    public int ttl = Node.TTL_THRESHOLD;
+    public int ttl = AODV.TTL_THRESHOLD;
     public int hopCount = 0;
     public int sequenceNo;
     public int type;
