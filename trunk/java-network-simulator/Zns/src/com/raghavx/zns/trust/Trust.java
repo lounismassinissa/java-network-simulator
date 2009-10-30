@@ -1,11 +1,11 @@
 
 package com.raghavx.zns.trust;
 
+import com.raghavx.zns.ip.IP;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.HashMap;
 import java.util.Map;
-import com.raghavx.zns.network.ip.IP;
 import com.raghavx.zns.node.Node;
 
 

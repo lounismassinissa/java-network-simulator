@@ -5,7 +5,7 @@ import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 import java.util.HashMap;
 import java.util.Map;
-import com.raghavx.zns.network.ip.IP;
+import com.raghavx.zns.ip.IP;
 import com.raghavx.zns.mobility.Coordinates;
 import com.raghavx.zns.trust.Trust;
 
